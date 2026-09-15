@@ -3,30 +3,30 @@ import { salesContent } from '../data/salesContent';
 
 export const BonusesSection: React.FC = () => {
   return (
-    <section id="bonuses-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F2F5F1' }}>
+    <section id="bonuses-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div
             className="inline-block px-5 py-2 rounded-full text-white text-[11px] sm:text-xs font-black mb-4 tracking-widest uppercase shadow-xs"
             style={{
-              backgroundColor: '#123C32',
-              border: '1px solid #DED6C8',
+              backgroundColor: '#D97706',
+              border: '1px solid #FDE68A',
             }}
           >
             {salesContent.bonuses.badge}
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black leading-tight tracking-tight" style={{ color: '#123C32' }}>
+          <h2 className="text-2xl sm:text-4xl font-black leading-tight tracking-tight text-black">
             {salesContent.bonuses.headingPrefix}{' '}
-            <span style={{ color: '#123C32' }}>
+            <span className="inline-block" style={{ color: '#1E4FC2' }}>
               {salesContent.bonuses.headingHighlight}
             </span>
           </h2>
-          <p className="text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed" style={{ color: '#66726C' }}>
+          <p className="text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed font-medium" style={{ color: '#475569' }}>
             {salesContent.bonuses.description}
           </p>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-4"
-            style={{ backgroundColor: '#C79A3B' }}
+            style={{ backgroundColor: '#EAB308' }}
           />
         </div>
 
@@ -36,8 +36,8 @@ export const BonusesSection: React.FC = () => {
               key={bonus.title}
               className="rounded-3xl overflow-hidden bg-white flex flex-col transition-all duration-300 hover:-translate-y-1"
               style={{
-                border: '1px solid #DED6C8',
-                boxShadow: '0 4px 14px rgba(18, 60, 50, 0.07)',
+                border: '1px solid #E2E8F0',
+                boxShadow: '0 4px 14px rgba(15, 23, 42, 0.05)',
               }}
             >
               <div className="aspect-square w-full overflow-hidden bg-white flex items-center justify-center p-4">
@@ -52,25 +52,27 @@ export const BonusesSection: React.FC = () => {
                 />
               </div>
 
-              <div className="p-6 flex flex-col flex-1 border-t" style={{ borderColor: '#DED6C8' }}>
+              <div className="p-6 flex flex-col flex-1 border-t" style={{ borderColor: '#E2E8F0' }}>
                 <span
-                  className="inline-block text-[10px] font-extrabold px-3 py-1 rounded-full mb-2 text-white tracking-wider self-start"
+                  className="inline-block text-[11px] font-extrabold px-3 py-1 rounded-full mb-2 tracking-wider self-start"
                   style={{
-                    backgroundColor: '#8B1E2D',
+                    backgroundColor: '#FEF3C7',
+                    color: '#B45309',
+                    border: '1px solid #FDE68A',
                   }}
                 >
                   {bonus.tag}
                 </span>
                 <h3
                   className="text-lg sm:text-xl font-black mb-1 tracking-tight"
-                  style={{ color: '#25302B' }}
+                  style={{ color: '#0F172A' }}
                 >
                   {bonus.title}
                 </h3>
-                <p className="text-xs sm:text-sm font-bold mb-2" style={{ color: '#25302B' }}>
+                <p className="text-xs sm:text-sm font-bold mb-2" style={{ color: '#0F172A' }}>
                   {bonus.subtitle}
                 </p>
-                <p className="text-sm leading-relaxed mt-auto" style={{ color: '#66726C' }}>
+                <p className="text-sm leading-relaxed mt-auto font-medium" style={{ color: '#475569' }}>
                   {bonus.desc}
                 </p>
               </div>

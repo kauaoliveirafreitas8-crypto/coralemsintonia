@@ -1,28 +1,30 @@
 import { BonusItem, FaqItem, SalesPlan, SkillItem, TargetAudienceItem, TestimonialItem } from '../types';
 
 export const salesContent = {
-  // Brand & Colors (Official Palette)
+  // Brand & Colors (Official Reference Palette)
   brand: {
-    primary: '#123C32', // verde-principal
-    primaryDark: '#0C2D25', // rodape / verde escuro
-    secondary: '#1C5143', // verde-secundario
-    greenCta: '#167347', // verde-cta
-    greenCtaHover: '#0F5C38', // verde-cta-hover
-    wine: '#8B1E2D', // vinho
-    gold: '#C79A3B', // dourado
-    bgMain: '#FAF8F3', // fundo-principal
-    bgAlt: '#F2F5F1', // fundo-alternativo
-    bgGuarantee: '#FBF4E5', // fundo-garantia
+    primary: '#1642A8', // azul-principal
+    primaryDark: '#0F2C6F', // azul escuro banner
+    royalBlue: '#1E4FC2', // azul royal vibrante
+    secondary: '#1D4ED8', // azul secundario
+    greenCta: '#16A34A', // verde-cta vivo (inalterado)
+    greenCtaHover: '#15803D', // verde-cta-hover (inalterado)
+    wine: '#1E4FC2', // substituido pelo azul da referencia
+    gold: '#EAB308', // dourado/amarelo da referencia
+    bgMain: '#FFFFFF', // fundo-principal
+    bgAlt: '#F8FAFC', // fundo-alternativo
+    bgBlue: '#1642A8', // fundo secao azul
+    bgGuarantee: '#FEF9EE', // fundo-garantia
     white: '#FFFFFF',
-    textMain: '#25302B',
-    textSecondary: '#66726C',
-    borderSoft: '#DED6C8',
-    footer: '#0C2D25',
+    textMain: '#0F172A',
+    textSecondary: '#475569',
+    borderSoft: '#E2E8F0',
+    footer: '#000000', // rodape preto inalterado
     // Fallback aliases for components
-    greenDark: '#167347',
-    greenLight: '#167347',
-    goldLight: '#FBF4E5',
-    dark: '#0C2D25',
+    greenDark: '#16A34A',
+    greenLight: '#22C55E',
+    goldLight: '#FEF9EE',
+    dark: '#0F2C6F',
   },
 
   // Checkout URLs (vazio para inserção do seu link próprio)

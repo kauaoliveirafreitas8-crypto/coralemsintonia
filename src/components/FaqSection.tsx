@@ -11,15 +11,15 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAF8F3' }}>
+    <section id="faq-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#123C32' }}>
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-black" style={{ color: '#000000' }}>
             {salesContent.faqs.heading}
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ backgroundColor: '#C79A3B' }}
+            style={{ backgroundColor: '#EAB308' }}
           />
         </div>
 
@@ -31,38 +31,38 @@ export const FaqSection: React.FC = () => {
                 key={item.q}
                 className="rounded-2xl overflow-hidden bg-white transition-all duration-200"
                 style={{
-                  border: '1px solid #DED6C8',
-                  boxShadow: '0 2px 8px rgba(18, 60, 50, 0.05)',
+                  border: '1px solid #E2E8F0',
+                  boxShadow: '0 2px 8px rgba(15, 23, 42, 0.04)',
                 }}
               >
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full flex items-center justify-between text-left p-4 sm:p-5 hover:bg-[#FAF8F3]/50 cursor-pointer transition-colors"
+                  className="w-full flex items-center justify-between text-left p-4 sm:p-5 hover:bg-[#F8FAFC] cursor-pointer transition-colors"
                 >
                   <span
                     className="font-extrabold text-sm sm:text-base pr-3"
-                    style={{ color: isOpen ? '#123C32' : '#25302B' }}
+                    style={{ color: isOpen ? '#1642A8' : '#0F172A' }}
                   >
                     {item.q}
                   </span>
                   {isOpen ? (
                     <ChevronUp
                       className="w-5 h-5 shrink-0 transition-transform"
-                      style={{ color: '#123C32' }}
+                      style={{ color: '#1642A8' }}
                     />
                   ) : (
                     <ChevronDown
                       className="w-5 h-5 shrink-0 transition-transform"
-                      style={{ color: '#123C32' }}
+                      style={{ color: '#64748B' }}
                     />
                   )}
                 </button>
 
                 {isOpen && (
                   <div
-                    className="px-4 pb-5 sm:px-5 sm:pb-5 text-sm sm:text-base leading-relaxed border-t pt-3 animate-in fade-in duration-150"
-                    style={{ borderColor: '#DED6C8', color: '#25302B' }}
+                    className="px-4 pb-5 sm:px-5 sm:pb-5 text-sm sm:text-base leading-relaxed border-t pt-3 animate-in fade-in duration-150 font-medium"
+                    style={{ borderColor: '#E2E8F0', color: '#0F172A' }}
                   >
                     {item.a}
                   </div>

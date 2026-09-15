@@ -11,7 +11,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
       id="skills-section"
       className="py-14 sm:py-18 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden"
       style={{
-        backgroundColor: '#123C32',
+        backgroundColor: '#1642A8',
       }}
     >
       <div className="max-w-5xl mx-auto relative z-10">
@@ -21,7 +21,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ backgroundColor: '#C79A3B' }}
+            style={{ backgroundColor: '#EAB308' }}
           />
         </div>
 
@@ -31,15 +31,15 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
               key={item.title}
               className="relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 hover:-translate-y-1"
               style={{
-                backgroundColor: '#1C5143',
+                backgroundColor: '#113382',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
               }}
             >
               <div
                 className="w-11 h-11 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-2.5 sm:mb-3 text-2xl sm:text-4xl shadow-md transition-transform hover:scale-110 shrink-0"
                 style={{
-                  backgroundColor: '#FAF8F3',
-                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.15)',
+                  backgroundColor: '#FFFFFF',
+                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.18)',
                 }}
               >
                 {item.emoji}
@@ -61,14 +61,14 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
             id="skills-cta-btn"
             type="button"
             onClick={onScrollToOffer}
-            className="cta-pulse inline-block w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-lg cursor-pointer hover:bg-[#0F5C38] transition-all"
+            className="cta-pulse inline-flex items-center justify-center w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-4.5 text-white text-base sm:text-lg font-black rounded-full cursor-pointer transition-all duration-200 shadow-xl hover:scale-[1.02] active:scale-[0.98]"
             style={{
-              backgroundColor: '#167347',
-              border: '1px solid rgba(255, 255, 255, 0.22)',
-              boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
+              background: 'linear-gradient(180deg, #22C55E 0%, #16A34A 100%)',
+              border: '1px solid rgba(255, 255, 255, 0.35)',
+              boxShadow: '0 10px 25px -3px rgba(22, 163, 74, 0.45), 0 4px 10px -2px rgba(22, 163, 74, 0.3)',
             }}
           >
-            {salesContent.skills.ctaText}
+            <span className="leading-snug">{salesContent.skills.ctaText}</span>
           </button>
         </div>
       </div>

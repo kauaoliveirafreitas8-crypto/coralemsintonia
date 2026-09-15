@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --verde-principal: #123C32;
-  --verde-secundario: #1C5143;
-  --verde-cta: #167347;
-  --verde-cta-hover: #0F5C38;
+  --azul-principal: #1642A8;
+  --azul-royal: #1E4FC2;
+  --azul-escuro: #0F2C6F;
+  --verde-cta: #16A34A;
+  --verde-cta-hover: #15803D;
 
-  --vinho: #8B1E2D;
-  --dourado: #C79A3B;
+  --vinho: #1E4FC2;
+  --dourado: #EAB308;
 
-  --fundo-principal: #FAF8F3;
-  --fundo-alternativo: #F2F5F1;
-  --fundo-garantia: #FBF4E5;
+  --fundo-principal: #FFFFFF;
+  --fundo-alternativo: #F8FAFC;
+  --fundo-azul: #1642A8;
+  --fundo-garantia: #FEF9EE;
 
   --branco: #FFFFFF;
-  --texto-principal: #25302B;
-  --texto-secundario: #66726C;
-  --borda-suave: #DED6C8;
-  --rodape: #0C2D25;
+  --texto-principal: #0F172A;
+  --texto-secundario: #475569;
+  --borda-suave: #E2E8F0;
+  --rodape: #000000;
 }
 
 body {
@@ -27,25 +29,33 @@ body {
 }
 
 .btn-cta {
-  background: var(--verde-cta);
-  color: var(--branco);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(22, 115, 71, 0.18);
-  transition: all 0.2s ease;
+  background: linear-gradient(180deg, #22C55E 0%, #16A34A 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 10px 25px -3px rgba(22, 163, 74, 0.4), 0 4px 6px -4px rgba(22, 163, 74, 0.2);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
 }
 
 .btn-cta:hover {
-  background: var(--verde-cta-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(15, 92, 56, 0.24);
+  background: linear-gradient(180deg, #16A34A 0%, #15803D 100%);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 14px 28px -2px rgba(22, 163, 74, 0.5), 0 6px 12px -3px rgba(22, 163, 74, 0.3);
+}
+
+.btn-cta:active {
+  transform: translateY(0) scale(0.99);
 }
 
 .card-standard {
   background: var(--branco);
   border: 1px solid var(--borda-suave);
   border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(18, 60, 50, 0.07);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
 }
 
 @keyframes cta-pulse {

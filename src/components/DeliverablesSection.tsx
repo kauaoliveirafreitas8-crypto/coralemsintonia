@@ -8,18 +8,20 @@ interface DeliverablesSectionProps {
 
 export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScrollToOffer }) => {
   return (
-    <section id="deliverables-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAF8F3' }}>
+    <section id="deliverables-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-4xl font-black tracking-tight" style={{ color: '#123C32' }}>
-            {salesContent.deliverables.titlePrefix}
-            <span style={{ color: '#123C32' }}>
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+            <span className="text-black" style={{ color: '#000000' }}>
+              {salesContent.deliverables.titlePrefix}
+            </span>
+            <span style={{ color: '#1E4FC2' }}>
               {salesContent.deliverables.titleHighlight}
             </span>
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ backgroundColor: '#C79A3B' }}
+            style={{ backgroundColor: '#EAB308' }}
           />
         </div>
 
@@ -42,28 +44,28 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <span
               className="inline-block text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full mb-3 text-white tracking-wider"
               style={{
-                backgroundColor: '#8B1E2D',
+                backgroundColor: '#1E4FC2',
               }}
             >
               {salesContent.deliverables.badge}
             </span>
             <h3
               className="text-xl sm:text-3xl font-black mb-2 tracking-tight"
-              style={{ color: '#123C32' }}
+              style={{ color: '#1E4FC2' }}
             >
               {salesContent.deliverables.productName}
             </h3>
 
-            <p className="text-sm sm:text-base mb-5 font-medium leading-relaxed" style={{ color: '#66726C' }}>
+            <p className="text-sm sm:text-base mb-5 font-semibold leading-relaxed" style={{ color: '#475569' }}>
               {salesContent.deliverables.subtitle}
             </p>
 
             <ul className="space-y-2.5 mb-6">
               {salesContent.deliverables.items.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm sm:text-base" style={{ color: '#25302B' }}>
+                <li key={item} className="flex items-start gap-3 text-sm sm:text-base" style={{ color: '#0F172A' }}>
                   <div
                     className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5"
-                    style={{ backgroundColor: '#167347' }}
+                    style={{ backgroundColor: '#16A34A' }}
                   >
                     <Check className="w-3 h-3 text-white" strokeWidth={3} />
                   </div>
@@ -75,9 +77,9 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <div
               className="p-4 rounded-xl border mb-6 text-xs sm:text-sm font-semibold leading-relaxed"
               style={{
-                backgroundColor: '#F2F5F1',
-                borderColor: '#DED6C8',
-                color: '#25302B',
+                backgroundColor: '#EFF6FF',
+                borderColor: '#BFDBFE',
+                color: '#1E3A8A',
               }}
             >
               💡 {salesContent.deliverables.footerNote}
@@ -87,14 +89,14 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
               id="deliverables-cta-btn"
               type="button"
               onClick={onScrollToOffer}
-              className="cta-pulse inline-block w-full sm:w-auto px-8 py-4 text-white text-base font-black rounded-lg shadow-md text-center cursor-pointer hover:bg-[#0F5C38] transition-all"
+              className="cta-pulse inline-flex items-center justify-center w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-full shadow-xl text-center cursor-pointer transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
-                backgroundColor: '#167347',
-                border: '1px solid rgba(255, 255, 255, 0.22)',
-                boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
+                background: 'linear-gradient(180deg, #22C55E 0%, #16A34A 100%)',
+                border: '1px solid rgba(255, 255, 255, 0.35)',
+                boxShadow: '0 10px 25px -3px rgba(22, 163, 74, 0.45), 0 4px 10px -2px rgba(22, 163, 74, 0.3)',
               }}
             >
-              {salesContent.deliverables.ctaText}
+              <span className="leading-snug">{salesContent.deliverables.ctaText}</span>
             </button>
           </div>
         </div>

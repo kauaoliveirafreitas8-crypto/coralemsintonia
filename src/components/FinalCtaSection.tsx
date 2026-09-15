@@ -9,25 +9,25 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToOffe
   return (
     <section
       id="final-cta-section"
-      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden"
+      className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden"
       style={{
-        backgroundColor: '#123C32',
+        backgroundColor: '#1642A8',
       }}
     >
       <div className="max-w-2xl mx-auto relative z-10">
-        <p className="text-xs sm:text-sm font-black tracking-widest uppercase mb-3" style={{ color: '#C79A3B' }}>
+        <p className="text-xs sm:text-sm font-black tracking-widest uppercase mb-3 text-blue-200" style={{ color: '#BFDBFE' }}>
           {salesContent.finalCta.title}
         </p>
 
-        <h2 className="text-xl sm:text-3xl font-black mb-4 leading-tight tracking-tight text-white">
+        <h2 className="text-2xl sm:text-4xl font-black mb-4 leading-tight tracking-tight text-white">
           {salesContent.finalCta.heading}
         </h2>
 
-        <p className="text-sm sm:text-base mb-5 leading-relaxed max-w-xl mx-auto" style={{ color: '#FAF8F3' }}>
+        <p className="text-sm sm:text-base mb-5 leading-relaxed max-w-xl mx-auto text-blue-100" style={{ color: '#E0E7FF' }}>
           {salesContent.finalCta.subtitle}
         </p>
 
-        <p className="text-base sm:text-lg font-black mb-6 sm:mb-8" style={{ color: '#C79A3B' }}>
+        <p className="text-base sm:text-xl font-black mb-6 sm:mb-8" style={{ color: '#FACC15' }}>
           {salesContent.finalCta.punchline}
         </p>
 
@@ -35,17 +35,17 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToOffe
           id="final-cta-btn"
           type="button"
           onClick={onScrollToOffer}
-          className="cta-pulse inline-block w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-lg shadow-md cursor-pointer hover:bg-[#0F5C38] transition-all"
+          className="cta-pulse inline-flex items-center justify-center w-full sm:w-auto px-8 sm:px-14 py-4 sm:py-5 text-white text-base sm:text-xl font-black rounded-full shadow-2xl cursor-pointer transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
           style={{
-            backgroundColor: '#167347',
-            border: '1px solid rgba(255, 255, 255, 0.22)',
-            boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
+            background: 'linear-gradient(180deg, #22C55E 0%, #16A34A 100%)',
+            border: '1px solid rgba(255, 255, 255, 0.4)',
+            boxShadow: '0 12px 28px -3px rgba(22, 163, 74, 0.5), 0 4px 12px -2px rgba(22, 163, 74, 0.3)',
           }}
         >
-          {salesContent.finalCta.buttonText}
+          <span className="leading-snug">{salesContent.finalCta.buttonText}</span>
         </button>
 
-        <p className="text-xs mt-3.5 font-medium" style={{ color: 'rgba(250, 248, 243, 0.8)' }}>
+        <p className="text-xs sm:text-sm mt-4 font-medium text-blue-200" style={{ color: '#BFDBFE' }}>
           {salesContent.finalCta.trustText}
         </p>
       </div>

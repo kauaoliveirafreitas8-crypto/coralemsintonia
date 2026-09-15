@@ -91,8 +91,7 @@ export const DiscountModal: React.FC<DiscountModalProps> = ({ isOpen, onClose })
             </p>
 
             <p
-              className="text-4xl font-black leading-none mt-1"
-              style={{ color: salesContent.brand.greenDark }}
+              className="text-4xl font-black leading-none mt-1 text-[#16A34A]"
             >
               R$ {salesContent.upsellModal.dealPrice}
               <span className="text-2xl font-bold">{salesContent.upsellModal.dealPriceCents}</span>
@@ -113,12 +112,14 @@ export const DiscountModal: React.FC<DiscountModalProps> = ({ isOpen, onClose })
                 e.preventDefault();
               }
             }}
-            className="cta-pulse flex items-center justify-center w-full mt-4 px-4 py-3.5 text-white text-sm sm:text-base font-black rounded-xl shadow-xl text-center hover:opacity-95 transition-all cursor-pointer"
+            className="cta-pulse flex items-center justify-center w-full mt-4 px-6 py-4 text-white text-sm sm:text-base font-black rounded-full shadow-xl text-center transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             style={{
-              background: `linear-gradient(135deg, ${salesContent.brand.greenDark}, ${salesContent.brand.greenLight}, ${salesContent.brand.greenDark})`,
+              background: 'linear-gradient(180deg, #22C55E 0%, #16A34A 100%)',
+              border: '1px solid rgba(255, 255, 255, 0.35)',
+              boxShadow: '0 8px 20px -2px rgba(22, 163, 74, 0.4)',
             }}
           >
-            {salesContent.upsellModal.acceptButtonText}
+            <span className="leading-snug">{salesContent.upsellModal.acceptButtonText}</span>
           </a>
 
           {/* Decline CTA (keeps standard basic purchase) */}
@@ -131,9 +132,9 @@ export const DiscountModal: React.FC<DiscountModalProps> = ({ isOpen, onClose })
                 e.preventDefault();
               }
             }}
-            className="flex items-center justify-center w-full mt-2.5 px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm font-bold text-slate-600 hover:bg-slate-100 transition-colors cursor-pointer"
+            className="flex items-center justify-center w-full mt-2.5 px-4 py-3 rounded-full border border-slate-200 bg-slate-50 text-xs sm:text-sm font-bold text-slate-600 hover:bg-slate-100 transition-colors cursor-pointer"
           >
-            {salesContent.upsellModal.declineButtonText}
+            <span className="leading-snug">{salesContent.upsellModal.declineButtonText}</span>
           </a>
 
           <p className="flex items-center justify-center gap-1.5 pt-3.5 text-[11px] font-medium text-slate-500">

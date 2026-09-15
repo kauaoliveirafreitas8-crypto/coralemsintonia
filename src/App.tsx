@@ -24,7 +24,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF8F3] text-[#25302B] flex flex-col selection:bg-[#167347]/20 selection:text-[#123C32]">
+    <div className="min-h-screen bg-[#F8FAFC] text-[#0F172A] flex flex-col selection:bg-[#167347]/20 selection:text-[#123C32]">
       {/* Top Banner */}
       <TopBanner />
 
