@@ -49,18 +49,22 @@ export const salesContent = {
   // Dynamic Showcase Carousel
   showcase: {
     row1: [
-      '/assets/modulo-15-opt.webp',
-      '/assets/modulo-16-opt.webp',
-      '/assets/modulo-17-opt.webp',
-      '/assets/modulo-18-opt.webp',
-      '/assets/modulo-19-opt.webp',
+      '/assets/showcase/08.webp',
+      '/assets/showcase/02.webp',
+      '/assets/showcase/11.webp',
+      '/assets/showcase/05.webp',
+      '/assets/showcase/14.webp',
+      '/assets/showcase/03.webp',
+      '/assets/showcase/09.webp',
     ],
     row2: [
-      '/assets/internal-p66-opt.webp',
-      '/assets/internal-p58-opt.webp',
-      '/assets/internal-p51-opt.webp',
-      '/assets/internal-p26-opt.webp',
-      '/assets/internal-p80-opt.webp',
+      '/assets/showcase/12.webp',
+      '/assets/showcase/04.webp',
+      '/assets/showcase/07.webp',
+      '/assets/showcase/01.webp',
+      '/assets/showcase/13.webp',
+      '/assets/showcase/06.webp',
+      '/assets/showcase/10.webp',
     ],
   },
 

@@ -27,6 +27,7 @@ export const ShowcaseCarousel: React.FC = () => {
                 className="w-full h-full object-cover block"
                 loading="lazy"
                 decoding="async"
+                referrerPolicy="no-referrer"
               />
             </div>
           ))}
@@ -53,6 +54,7 @@ export const ShowcaseCarousel: React.FC = () => {
                 className="w-full h-full object-cover block"
                 loading="lazy"
                 decoding="async"
+                referrerPolicy="no-referrer"
               />
             </div>
           ))}
