@@ -25,11 +25,11 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
           {salesContent.skills.items.map((item) => (
             <div
               key={item.title}
-              className="relative flex flex-col items-center text-center p-5 rounded-2xl transition-all duration-200 hover:-translate-y-1 hover:bg-white/10"
+              className="relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 hover:-translate-y-1 hover:bg-white/10"
               style={{
                 background: 'rgba(255, 255, 255, 0.08)',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
@@ -37,7 +37,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
               }}
             >
               <div
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center mb-3 text-3xl sm:text-4xl shadow-md transition-transform hover:scale-110 shrink-0"
+                className="w-11 h-11 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-2.5 sm:mb-3 text-2xl sm:text-4xl shadow-md transition-transform hover:scale-110 shrink-0"
                 style={{
                   background: '#ffffff',
                   boxShadow: '0 8px 20px -6px rgba(0, 0, 0, 0.25)',
@@ -45,11 +45,11 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
               >
                 {item.emoji}
               </div>
-              <h3 className="font-extrabold text-sm sm:text-base leading-tight text-white mb-2 drop-shadow-sm">
+              <h3 className="font-black text-xs sm:text-base leading-tight text-white mb-1 sm:mb-2 drop-shadow-sm">
                 {item.title}
               </h3>
               {item.desc && (
-                <p className="text-xs sm:text-sm text-blue-100/90 leading-relaxed font-medium">
+                <p className="text-[11px] sm:text-sm text-blue-100/90 leading-snug sm:leading-relaxed font-medium">
                   {item.desc}
                 </p>
               )}

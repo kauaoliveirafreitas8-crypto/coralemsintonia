@@ -1,7 +1,6 @@
 import React from 'react';
 import { ShieldCheck } from 'lucide-react';
 import { salesContent } from '../data/salesContent';
-import { VideoPlayer } from './VideoPlayer';
 
 interface HeroSectionProps {
   onScrollToOffer: () => void;
@@ -38,24 +37,33 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
         </h1>
 
         {/* Subtitle / Promise */}
-        <h2 className="text-base sm:text-xl text-slate-800 mb-6 max-w-3xl mx-auto leading-relaxed font-bold">
+        <h2 className="text-sm sm:text-xl text-slate-800 mb-5 sm:mb-6 max-w-3xl mx-auto leading-relaxed font-bold">
           {salesContent.hero.subHeading}
         </h2>
 
-        {/* Video Player */}
-        <VideoPlayer />
+        {/* Hero Mockup */}
+        <div id="hero-mockup-wrapper" className="my-5 sm:my-8 max-w-2xl mx-auto px-2 flex justify-center">
+          <img
+            src={salesContent.hero.mockupImage}
+            alt="+80 Atividades Prontas para Coral de Igreja"
+            width={1000}
+            height={700}
+            className="w-full max-w-xl h-auto object-contain mx-auto drop-shadow-2xl transition-transform hover:scale-[1.02] duration-300 block"
+            loading="eager"
+          />
+        </div>
 
         {/* Description */}
-        <p className="text-base sm:text-lg text-slate-700 mt-6 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-sm sm:text-lg text-slate-700 mt-5 sm:mt-6 max-w-2xl mx-auto leading-relaxed">
           {salesContent.hero.leadText}
         </p>
 
         {/* Audience Pills */}
-        <div className="mt-5 flex flex-wrap justify-center gap-2 text-xs sm:text-sm font-semibold">
+        <div className="mt-4 sm:mt-5 flex flex-wrap justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-sm font-semibold">
           {salesContent.hero.audienceTags.map((tag) => (
             <span
               key={tag}
-              className="px-4 py-1.5 rounded-full text-white shadow-sm transition-transform hover:scale-105 font-bold"
+              className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-white shadow-sm transition-transform hover:scale-105 font-bold"
               style={{
                 background: `linear-gradient(135deg, ${salesContent.brand.primaryDark}, ${salesContent.brand.primary})`,
                 borderTop: `2px solid ${salesContent.brand.gold}`,
@@ -67,12 +75,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
         </div>
 
         {/* Primary CTA */}
-        <div className="mt-7">
+        <div className="mt-6 sm:mt-7">
           <button
             id="hero-cta-btn"
             type="button"
             onClick={onScrollToOffer}
-            className="cta-pulse inline-block w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-xl shadow-xl cursor-pointer hover:opacity-95 transition-all"
+            className="cta-pulse inline-block w-full sm:w-auto px-6 sm:px-12 py-3.5 sm:py-4 text-white text-base sm:text-lg font-black rounded-xl shadow-xl cursor-pointer hover:opacity-95 transition-all"
             style={{
               background: `linear-gradient(135deg, ${salesContent.brand.greenDark}, ${salesContent.brand.greenLight}, ${salesContent.brand.greenDark})`,
             }}

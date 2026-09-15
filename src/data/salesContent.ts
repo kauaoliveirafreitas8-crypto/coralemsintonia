@@ -31,6 +31,7 @@ export const salesContent = {
     headlineSubtitle: 'PARA CORAL DE IGREJA',
     subHeading: 'Aqueça as vozes, trabalhe afinação, ritmo e dicção e conduza ensaios mais produtivos sem precisar improvisar atividades toda semana.',
     leadText: 'Um material prático e organizado para regentes e líderes de coral de igreja que querem ter sempre à mão atividades para trabalhar respiração, afinação, ritmo, dicção, concentração, integração e expressão do grupo.',
+    mockupImage: '/assets/mockup-principal-1.webp',
     video: {
       poster: '/assets/landing-video-poster.webp',
       mp4: '/assets/landing-video.mp4',
@@ -184,7 +185,7 @@ export const salesContent = {
     titleHighlight: 'RECEBER?',
     productName: '+80 ATIVIDADES PRONTAS PARA CORAL DE IGREJA',
     subtitle: 'Você terá uma biblioteca de atividades práticas para consultar e aplicar de acordo com aquilo que seu coral precisa trabalhar.',
-    mockupImage: '/assets/mockup-essencial-v2.webp',
+    mockupImage: '/assets/mockup-secundario-1.webp',
     items: [
       '+80 atividades práticas para coral de igreja',
       'Aquecimentos vocais',
@@ -283,7 +284,7 @@ export const salesContent = {
         id: 'essencial',
         name: 'PLANO ESSENCIAL',
         title: '+80 Atividades Prontas para Coral de Igreja',
-        mockupImage: '/assets/mockup-essencial-v2.webp',
+        mockupImage: '/assets/mockup-secundario-1.webp',
         altText: '+80 Atividades Prontas para Coral de Igreja',
         features: [
           '+80 atividades práticas para coral de igreja',

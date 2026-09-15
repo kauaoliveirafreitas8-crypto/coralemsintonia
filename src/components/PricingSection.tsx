@@ -49,36 +49,36 @@ export const PricingSection: React.FC = () => {
           </div>
 
           {/* Countdown timer blocks */}
-          <div className="flex justify-center items-center gap-3 sm:gap-4">
+          <div className="flex justify-center items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-2 sm:gap-4">
               <div
-                className="bg-white rounded-2xl px-6 sm:px-8 py-3.5 sm:py-4 shadow-md border-2 min-w-[95px]"
+                className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-8 py-2.5 sm:py-4 shadow-md border-2 min-w-[76px] sm:min-w-[95px]"
                 style={{ borderColor: salesContent.brand.gold }}
               >
                 <div
-                  className="text-3xl sm:text-5xl font-black text-center"
+                  className="text-2xl sm:text-5xl font-black text-center"
                   style={{ color: salesContent.brand.primaryDark }}
                 >
                   {minutes}
                 </div>
-                <div className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5 text-center">
+                <div className="text-[9px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5 text-center">
                   Minutos
                 </div>
               </div>
 
-              <div className="text-2xl sm:text-3xl font-black text-slate-400">:</div>
+              <div className="text-xl sm:text-3xl font-black text-slate-400">:</div>
 
               <div
-                className="bg-white rounded-2xl px-6 sm:px-8 py-3.5 sm:py-4 shadow-md border-2 min-w-[95px]"
+                className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-8 py-2.5 sm:py-4 shadow-md border-2 min-w-[76px] sm:min-w-[95px]"
                 style={{ borderColor: salesContent.brand.gold }}
               >
                 <div
-                  className="text-3xl sm:text-5xl font-black text-center"
+                  className="text-2xl sm:text-5xl font-black text-center"
                   style={{ color: salesContent.brand.primaryDark }}
                 >
                   {seconds}
                 </div>
-                <div className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5 text-center">
+                <div className="text-[9px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5 text-center">
                   Segundos
                 </div>
               </div>
@@ -186,7 +186,7 @@ export const PricingSection: React.FC = () => {
                   <span className="text-lg leading-none font-bold text-red-600">↓</span>
                   <p className="text-xs sm:text-sm leading-snug text-slate-800">
                     <span className="font-extrabold text-red-700">92% das pessoas</span> preferem
-                    levar os <span className="font-extrabold text-red-700">4 bônus</span> na oferta ao lado
+                    levar os <span className="font-extrabold text-red-700">4 bônus</span> no plano completo
                   </p>
                 </div>
               )}
