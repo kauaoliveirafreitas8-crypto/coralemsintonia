@@ -1,0 +1,8 @@
+{
+  "name": "+80 Atividades para Coral de Igreja",
+  "description": "+80 atividades práticas e prontas para regentes e líderes de coral de igreja: respiração, afinação, ritmo, dicção, concentração e integração.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
