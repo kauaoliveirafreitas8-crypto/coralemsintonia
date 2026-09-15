@@ -6,16 +6,17 @@ export const ShowcaseCarousel: React.FC = () => {
   const row2Images = [...salesContent.showcase.row2, ...salesContent.showcase.row2, ...salesContent.showcase.row2];
 
   return (
-    <section id="showcase-section" className="py-6 sm:py-10 bg-white overflow-hidden space-y-6">
+    <section id="showcase-section" className="py-6 sm:py-10 overflow-hidden space-y-6" style={{ backgroundColor: '#FAF8F3' }}>
       {/* Row 1: Forward track */}
       <div className="relative w-full overflow-hidden">
         <div className="flex gap-4 sm:gap-6 showcase-track" style={{ width: 'max-content' }}>
           {row1Images.map((src, index) => (
             <div
               key={`row1-${index}`}
-              className="flex-shrink-0 rounded-2xl overflow-hidden border-4 shadow-lg transition-transform hover:scale-105"
+              className="flex-shrink-0 rounded-2xl overflow-hidden border shadow-sm transition-transform hover:scale-105"
               style={{
-                borderColor: salesContent.brand.gold,
+                borderColor: '#DED6C8',
+                boxShadow: '0 4px 14px rgba(18, 60, 50, 0.07)',
                 width: 'min(70vw, 280px)',
               }}
             >
@@ -40,9 +41,10 @@ export const ShowcaseCarousel: React.FC = () => {
           {row2Images.map((src, index) => (
             <div
               key={`row2-${index}`}
-              className="flex-shrink-0 rounded-2xl overflow-hidden border-4 shadow-lg transition-transform hover:scale-105"
+              className="flex-shrink-0 rounded-2xl overflow-hidden border shadow-sm transition-transform hover:scale-105"
               style={{
-                borderColor: salesContent.brand.gold,
+                borderColor: '#DED6C8',
+                boxShadow: '0 4px 14px rgba(18, 60, 50, 0.07)',
                 width: 'min(70vw, 280px)',
               }}
             >

@@ -11,17 +11,17 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
       id="skills-section"
       className="py-14 sm:py-18 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden"
       style={{
-        background: `linear-gradient(135deg, ${salesContent.brand.primary}, ${salesContent.brand.primaryDark})`,
+        backgroundColor: '#123C32',
       }}
     >
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-4xl font-black mb-3 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black mb-3 tracking-tight text-white">
             {salesContent.skills.heading}
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: salesContent.brand.gold }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -29,18 +29,17 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
           {salesContent.skills.items.map((item) => (
             <div
               key={item.title}
-              className="relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 hover:-translate-y-1 hover:bg-white/10"
+              className="relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 hover:-translate-y-1"
               style={{
-                background: 'rgba(255, 255, 255, 0.08)',
+                backgroundColor: '#1C5143',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
-                backdropFilter: 'blur(8px)',
               }}
             >
               <div
                 className="w-11 h-11 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-2.5 sm:mb-3 text-2xl sm:text-4xl shadow-md transition-transform hover:scale-110 shrink-0"
                 style={{
-                  background: '#ffffff',
-                  boxShadow: '0 8px 20px -6px rgba(0, 0, 0, 0.25)',
+                  backgroundColor: '#FAF8F3',
+                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.15)',
                 }}
               >
                 {item.emoji}
@@ -49,7 +48,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
                 {item.title}
               </h3>
               {item.desc && (
-                <p className="text-[11px] sm:text-sm text-blue-100/90 leading-snug sm:leading-relaxed font-medium">
+                <p className="text-[11px] sm:text-sm text-white/90 leading-snug sm:leading-relaxed font-medium">
                   {item.desc}
                 </p>
               )}
@@ -62,9 +61,11 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
             id="skills-cta-btn"
             type="button"
             onClick={onScrollToOffer}
-            className="cta-pulse inline-block w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-xl shadow-2xl cursor-pointer hover:opacity-95 transition-all"
+            className="cta-pulse inline-block w-full sm:w-auto px-8 sm:px-12 py-4 text-white text-base sm:text-lg font-black rounded-lg cursor-pointer hover:bg-[#0F5C38] transition-all"
             style={{
-              background: `linear-gradient(135deg, ${salesContent.brand.greenDark}, ${salesContent.brand.greenLight}, ${salesContent.brand.greenDark})`,
+              backgroundColor: '#167347',
+              border: '1px solid rgba(255, 255, 255, 0.22)',
+              boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
             }}
           >
             {salesContent.skills.ctaText}

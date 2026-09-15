@@ -9,14 +9,15 @@ export const TargetAudienceSection: React.FC = () => {
           <div
             className="inline-block px-6 py-2 rounded-full mb-4 shadow-sm"
             style={{
-              background: `linear-gradient(135deg, ${salesContent.brand.primary}, ${salesContent.brand.primaryDark})`,
+              backgroundColor: '#123C32',
+              border: '1px solid #DED6C8',
             }}
           >
             <span className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
               {salesContent.targetAudience.badge}
             </span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight" style={{ color: '#123C32' }}>
             {salesContent.targetAudience.heading}
           </h2>
         </div>
@@ -25,22 +26,26 @@ export const TargetAudienceSection: React.FC = () => {
           {salesContent.targetAudience.items.map((item) => (
             <div
               key={item.title}
-              className="group relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-2xl bg-white shadow-[0_4px_20px_-8px_rgba(10,26,63,0.12)] hover:shadow-[0_12px_28px_-8px_rgba(10,26,63,0.22)] transition-all duration-200 hover:-translate-y-1 border border-slate-100"
+              className="group relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-2xl bg-white transition-all duration-200 hover:-translate-y-1"
+              style={{
+                border: '1px solid #DED6C8',
+                boxShadow: '0 4px 14px rgba(18, 60, 50, 0.07)',
+              }}
             >
               <div
-                className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-2.5 sm:mb-3 text-xl sm:text-3xl transition-transform group-hover:scale-110 shrink-0"
+                className="w-11 h-11 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2.5 sm:mb-3 text-xl sm:text-3xl transition-transform group-hover:scale-110 shrink-0"
                 style={{
-                  background: `linear-gradient(135deg, ${salesContent.brand.primaryDark}, ${salesContent.brand.primary})`,
-                  boxShadow: `inset 0 0 0 1px ${salesContent.brand.gold}66`,
+                  backgroundColor: '#F2F5F1',
+                  border: '1px solid #DED6C8',
                 }}
               >
                 {item.emoji}
               </div>
-              <h3 className="font-black text-xs sm:text-base leading-tight sm:leading-snug text-slate-900 mb-1 sm:mb-1.5">
+              <h3 className="font-black text-xs sm:text-base leading-tight sm:leading-snug mb-1 sm:mb-1.5" style={{ color: '#25302B' }}>
                 {item.title}
               </h3>
               {item.desc && (
-                <p className="text-[11px] sm:text-sm text-slate-600 leading-snug sm:leading-relaxed">
+                <p className="text-[11px] sm:text-sm leading-snug sm:leading-relaxed" style={{ color: '#66726C' }}>
                   {item.desc}
                 </p>
               )}

@@ -8,12 +8,15 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => {
   return (
-    <section id="hero-section" className="px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="hero-section" className="px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAF8F3' }}>
       <div className="max-w-4xl mx-auto text-center py-6 sm:py-10">
         {/* Security badge */}
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border mb-4 sm:mb-6 border-emerald-600 bg-emerald-50">
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" strokeWidth={2.5} />
-          <span className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-emerald-700">
+        <div
+          className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border mb-4 sm:mb-6"
+          style={{ backgroundColor: '#F2F5F1', borderColor: '#DED6C8', color: '#123C32' }}
+        >
+          <ShieldCheck className="w-3.5 h-3.5" style={{ color: '#123C32' }} strokeWidth={2.5} />
+          <span className="text-[10px] sm:text-xs font-bold tracking-wider uppercase" style={{ color: '#123C32' }}>
             {salesContent.hero.securityBadge}
           </span>
         </div>
@@ -22,22 +25,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
         <h1 className="font-black leading-tight mb-4 tracking-tight">
           <span
             className="block text-3xl sm:text-5xl md:text-6xl font-black"
-            style={{
-              background: `linear-gradient(135deg, #2563eb, ${salesContent.brand.primary})`,
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
+            style={{ color: '#8B1E2D' }}
           >
             {salesContent.hero.headlineHighlight}
           </span>
-          <span className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3 text-slate-900 font-extrabold">
+          <span
+            className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3 font-extrabold"
+            style={{ color: '#123C32' }}
+          >
             {salesContent.hero.headlineSubtitle}
           </span>
         </h1>
 
         {/* Subtitle / Promise */}
-        <h2 className="text-sm sm:text-xl text-slate-800 mb-5 sm:mb-6 max-w-3xl mx-auto leading-relaxed font-bold">
+        <h2
+          className="text-sm sm:text-xl mb-5 sm:mb-6 max-w-3xl mx-auto leading-relaxed font-bold"
+          style={{ color: '#25302B' }}
+        >
           {salesContent.hero.subHeading}
         </h2>
 
@@ -54,7 +58,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
         </div>
 
         {/* Description */}
-        <p className="text-sm sm:text-lg text-slate-700 mt-5 sm:mt-6 max-w-2xl mx-auto leading-relaxed">
+        <p
+          className="text-sm sm:text-lg mt-5 sm:mt-6 max-w-2xl mx-auto leading-relaxed"
+          style={{ color: '#66726C' }}
+        >
           {salesContent.hero.leadText}
         </p>
 
@@ -65,8 +72,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
               key={tag}
               className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-white shadow-sm transition-transform hover:scale-105 font-bold"
               style={{
-                background: `linear-gradient(135deg, ${salesContent.brand.primaryDark}, ${salesContent.brand.primary})`,
-                borderTop: `2px solid ${salesContent.brand.gold}`,
+                backgroundColor: '#123C32',
+                borderTop: '2px solid #C79A3B',
               }}
             >
               {tag}
@@ -80,14 +87,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
             id="hero-cta-btn"
             type="button"
             onClick={onScrollToOffer}
-            className="cta-pulse inline-block w-full sm:w-auto px-6 sm:px-12 py-3.5 sm:py-4 text-white text-base sm:text-lg font-black rounded-xl shadow-xl cursor-pointer hover:opacity-95 transition-all"
+            className="cta-pulse inline-block w-full sm:w-auto px-6 sm:px-12 py-3.5 sm:py-4 text-white text-base sm:text-lg font-black rounded-lg cursor-pointer hover:bg-[#0F5C38] transition-all"
             style={{
-              background: `linear-gradient(135deg, ${salesContent.brand.greenDark}, ${salesContent.brand.greenLight}, ${salesContent.brand.greenDark})`,
+              backgroundColor: '#167347',
+              border: '1px solid rgba(255, 255, 255, 0.22)',
+              boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
             }}
           >
             {salesContent.hero.ctaText}
           </button>
-          <p className="text-xs text-slate-500 mt-3 font-medium">
+          <p className="text-xs mt-3 font-medium" style={{ color: '#66726C' }}>
             {salesContent.hero.trustNotice}
           </p>
         </div>

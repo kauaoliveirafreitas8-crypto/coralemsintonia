@@ -3,29 +3,30 @@ import { salesContent } from '../data/salesContent';
 
 export const BonusesSection: React.FC = () => {
   return (
-    <section id="bonuses-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+    <section id="bonuses-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#F2F5F1' }}>
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div
-            className="inline-block px-5 py-2 rounded-full text-white text-[11px] sm:text-xs font-black mb-4 tracking-widest uppercase shadow-sm"
+            className="inline-block px-5 py-2 rounded-full text-white text-[11px] sm:text-xs font-black mb-4 tracking-widest uppercase shadow-xs"
             style={{
-              background: `linear-gradient(135deg, #b8962e, ${salesContent.brand.gold})`,
+              backgroundColor: '#123C32',
+              border: '1px solid #DED6C8',
             }}
           >
             {salesContent.bonuses.badge}
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black leading-tight text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black leading-tight tracking-tight" style={{ color: '#123C32' }}>
             {salesContent.bonuses.headingPrefix}{' '}
-            <span style={{ color: salesContent.brand.primary }}>
+            <span style={{ color: '#123C32' }}>
               {salesContent.bonuses.headingHighlight}
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 mt-3 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed" style={{ color: '#66726C' }}>
             {salesContent.bonuses.description}
           </p>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-4"
-            style={{ background: salesContent.brand.gold }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -33,8 +34,11 @@ export const BonusesSection: React.FC = () => {
           {salesContent.bonuses.items.map((bonus) => (
             <div
               key={bonus.title}
-              className="rounded-3xl border-2 shadow-lg overflow-hidden bg-white flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
-              style={{ borderColor: salesContent.brand.gold }}
+              className="rounded-3xl overflow-hidden bg-white flex flex-col transition-all duration-300 hover:-translate-y-1"
+              style={{
+                border: '1px solid #DED6C8',
+                boxShadow: '0 4px 14px rgba(18, 60, 50, 0.07)',
+              }}
             >
               <div className="aspect-square w-full overflow-hidden bg-white flex items-center justify-center p-4">
                 <img
@@ -48,25 +52,25 @@ export const BonusesSection: React.FC = () => {
                 />
               </div>
 
-              <div className="p-6 flex flex-col flex-1 border-t border-slate-100">
+              <div className="p-6 flex flex-col flex-1 border-t" style={{ borderColor: '#DED6C8' }}>
                 <span
                   className="inline-block text-[10px] font-extrabold px-3 py-1 rounded-full mb-2 text-white tracking-wider self-start"
                   style={{
-                    background: `linear-gradient(135deg, #b8962e, ${salesContent.brand.gold})`,
+                    backgroundColor: '#8B1E2D',
                   }}
                 >
                   {bonus.tag}
                 </span>
                 <h3
                   className="text-lg sm:text-xl font-black mb-1 tracking-tight"
-                  style={{ color: salesContent.brand.primaryDark }}
+                  style={{ color: '#25302B' }}
                 >
                   {bonus.title}
                 </h3>
-                <p className="text-xs sm:text-sm font-bold mb-2 text-slate-800">
+                <p className="text-xs sm:text-sm font-bold mb-2" style={{ color: '#25302B' }}>
                   {bonus.subtitle}
                 </p>
-                <p className="text-sm text-slate-600 leading-relaxed mt-auto">
+                <p className="text-sm leading-relaxed mt-auto" style={{ color: '#66726C' }}>
                   {bonus.desc}
                 </p>
               </div>

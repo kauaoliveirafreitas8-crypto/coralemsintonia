@@ -1,15 +1,28 @@
 import { BonusItem, FaqItem, SalesPlan, SkillItem, TargetAudienceItem, TestimonialItem } from '../types';
 
 export const salesContent = {
-  // Brand & Colors
+  // Brand & Colors (Official Palette)
   brand: {
-    primary: '#1e40af', // Blue 800
-    primaryDark: '#1e3a8a', // Blue 900
-    dark: '#0f172a', // Slate 900
-    gold: '#d4af37', // Metallic Gold
-    goldLight: '#fef3c7',
-    greenDark: '#15803d',
-    greenLight: '#16a34a',
+    primary: '#123C32', // verde-principal
+    primaryDark: '#0C2D25', // rodape / verde escuro
+    secondary: '#1C5143', // verde-secundario
+    greenCta: '#167347', // verde-cta
+    greenCtaHover: '#0F5C38', // verde-cta-hover
+    wine: '#8B1E2D', // vinho
+    gold: '#C79A3B', // dourado
+    bgMain: '#FAF8F3', // fundo-principal
+    bgAlt: '#F2F5F1', // fundo-alternativo
+    bgGuarantee: '#FBF4E5', // fundo-garantia
+    white: '#FFFFFF',
+    textMain: '#25302B',
+    textSecondary: '#66726C',
+    borderSoft: '#DED6C8',
+    footer: '#0C2D25',
+    // Fallback aliases for components
+    greenDark: '#167347',
+    greenLight: '#167347',
+    goldLight: '#FBF4E5',
+    dark: '#0C2D25',
   },
 
   // Checkout URLs (vazio para inserção do seu link próprio)

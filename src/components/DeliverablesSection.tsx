@@ -8,18 +8,18 @@ interface DeliverablesSectionProps {
 
 export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScrollToOffer }) => {
   return (
-    <section id="deliverables-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="deliverables-section" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAF8F3' }}>
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight" style={{ color: '#123C32' }}>
             {salesContent.deliverables.titlePrefix}
-            <span style={{ color: salesContent.brand.primary }}>
+            <span style={{ color: '#123C32' }}>
               {salesContent.deliverables.titleHighlight}
             </span>
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ background: salesContent.brand.gold }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -42,28 +42,28 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <span
               className="inline-block text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full mb-3 text-white tracking-wider"
               style={{
-                background: `linear-gradient(135deg, ${salesContent.brand.primary}, ${salesContent.brand.primaryDark})`,
+                backgroundColor: '#8B1E2D',
               }}
             >
               {salesContent.deliverables.badge}
             </span>
             <h3
               className="text-xl sm:text-3xl font-black mb-2 tracking-tight"
-              style={{ color: salesContent.brand.primaryDark }}
+              style={{ color: '#123C32' }}
             >
               {salesContent.deliverables.productName}
             </h3>
 
-            <p className="text-sm sm:text-base text-slate-600 mb-5 font-medium leading-relaxed">
+            <p className="text-sm sm:text-base mb-5 font-medium leading-relaxed" style={{ color: '#66726C' }}>
               {salesContent.deliverables.subtitle}
             </p>
 
             <ul className="space-y-2.5 mb-6">
               {salesContent.deliverables.items.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm sm:text-base text-slate-800">
+                <li key={item} className="flex items-start gap-3 text-sm sm:text-base" style={{ color: '#25302B' }}>
                   <div
                     className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5"
-                    style={{ background: salesContent.brand.greenLight }}
+                    style={{ backgroundColor: '#167347' }}
                   >
                     <Check className="w-3 h-3 text-white" strokeWidth={3} />
                   </div>
@@ -72,7 +72,14 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
               ))}
             </ul>
 
-            <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-100 mb-6 text-xs sm:text-sm font-semibold text-slate-800 leading-relaxed">
+            <div
+              className="p-4 rounded-xl border mb-6 text-xs sm:text-sm font-semibold leading-relaxed"
+              style={{
+                backgroundColor: '#F2F5F1',
+                borderColor: '#DED6C8',
+                color: '#25302B',
+              }}
+            >
               💡 {salesContent.deliverables.footerNote}
             </div>
 
@@ -80,9 +87,11 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
               id="deliverables-cta-btn"
               type="button"
               onClick={onScrollToOffer}
-              className="cta-pulse inline-block w-full sm:w-auto px-8 py-4 text-white text-base font-black rounded-xl shadow-xl text-center cursor-pointer hover:opacity-95 transition-all"
+              className="cta-pulse inline-block w-full sm:w-auto px-8 py-4 text-white text-base font-black rounded-lg shadow-md text-center cursor-pointer hover:bg-[#0F5C38] transition-all"
               style={{
-                background: `linear-gradient(135deg, ${salesContent.brand.greenDark}, ${salesContent.brand.greenLight}, ${salesContent.brand.greenDark})`,
+                backgroundColor: '#167347',
+                border: '1px solid rgba(255, 255, 255, 0.22)',
+                boxShadow: '0 6px 16px rgba(22, 115, 71, 0.18)',
               }}
             >
               {salesContent.deliverables.ctaText}
