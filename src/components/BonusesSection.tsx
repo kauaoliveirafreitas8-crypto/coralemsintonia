@@ -49,6 +49,7 @@ export const BonusesSection: React.FC = () => {
                   className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                 />
               </div>
 
