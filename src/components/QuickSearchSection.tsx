@@ -32,7 +32,7 @@ export const QuickSearchSection: React.FC = () => {
               </div>
               <div className="text-sm sm:text-base leading-snug" style={{ color: '#0F172A' }}>
                 <span className="font-semibold">{step.trigger} </span>
-                <span className="font-bold" style={{ color: '#1E4FC2' }}>{step.action}</span>
+                <span className="font-bold" style={{ color: '#123C32' }}>{step.action}</span>
               </div>
             </div>
           ))}
@@ -42,18 +42,18 @@ export const QuickSearchSection: React.FC = () => {
         <div
           className="p-5 sm:p-6 rounded-2xl text-white shadow-md flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 font-black text-base sm:text-lg"
           style={{
-            backgroundColor: '#1642A8',
+            backgroundColor: '#123C32',
             border: '1px solid rgba(255, 255, 255, 0.2)',
           }}
         >
           <span className="flex items-center gap-2">
             <span>🎯</span> Escolha o objetivo
           </span>
-          <ArrowRight className="hidden sm:block w-5 h-5 text-amber-300" style={{ color: '#FACC15' }} />
+          <ArrowRight className="hidden sm:block w-5 h-5" style={{ color: '#FACC15' }} />
           <span className="flex items-center gap-2">
             <span>📖</span> Consulte a atividade
           </span>
-          <ArrowRight className="hidden sm:block w-5 h-5 text-amber-300" style={{ color: '#FACC15' }} />
+          <ArrowRight className="hidden sm:block w-5 h-5" style={{ color: '#FACC15' }} />
           <span className="flex items-center gap-2">
             <span>✨</span> Aplique no ensaio
           </span>

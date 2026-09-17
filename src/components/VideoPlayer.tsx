@@ -92,9 +92,9 @@ export const VideoPlayer: React.FC = () => {
               id="btn-enable-sound"
               type="button"
               onClick={handleEnableSound}
-              className="pointer-events-auto flex aspect-square w-40 sm:w-48 flex-col items-center justify-center gap-2.5 border border-white/40 bg-blue-600/40 p-4 backdrop-blur-md rounded-2xl transition-all duration-200 hover:bg-blue-600/60 hover:scale-105 active:scale-95 shadow-xl"
+              className="pointer-events-auto flex aspect-square w-40 sm:w-48 flex-col items-center justify-center gap-2.5 border-2 border-white/60 bg-[#123C32]/80 p-4 backdrop-blur-md rounded-2xl transition-all duration-200 hover:bg-[#123C32] hover:scale-105 active:scale-95 shadow-2xl"
             >
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-blue-600 shadow-lg">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-[#123C32] shadow-lg">
                 <Volume2 className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <span className="text-center text-[11px] sm:text-[13px] font-black leading-tight tracking-tight text-white uppercase drop-shadow-sm">
@@ -119,7 +119,7 @@ export const VideoPlayer: React.FC = () => {
             className="h-full transition-[width] duration-150 ease-linear"
             style={{
               width: `${progress}%`,
-              background: `linear-gradient(90deg, #3b82f6, ${salesContent.brand.primary})`,
+              background: `linear-gradient(90deg, #FACC15, #16A34A)`,
             }}
           />
         </div>

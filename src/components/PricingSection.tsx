@@ -37,7 +37,7 @@ export const PricingSection: React.FC = () => {
             <span className="text-black" style={{ color: '#000000' }}>
               {salesContent.pricing.titlePrefix}
             </span>
-            <span style={{ color: '#1E4FC2' }}>
+            <span style={{ color: '#8B1E2D' }}>
               {salesContent.pricing.titleHighlight}
             </span>
           </h2>
@@ -59,11 +59,11 @@ export const PricingSection: React.FC = () => {
             <div className="flex items-center gap-2 sm:gap-4">
               <div
                 className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-8 py-2.5 sm:py-4 shadow-sm border-2 min-w-[76px] sm:min-w-[95px]"
-                style={{ borderColor: '#1642A8' }}
+                style={{ borderColor: '#8B1E2D' }}
               >
                 <div
                   className="text-2xl sm:text-5xl font-black text-center"
-                  style={{ color: '#1642A8' }}
+                  style={{ color: '#8B1E2D' }}
                 >
                   {minutes}
                 </div>
@@ -72,15 +72,15 @@ export const PricingSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="text-xl sm:text-3xl font-black" style={{ color: '#1642A8' }}>:</div>
+              <div className="text-xl sm:text-3xl font-black" style={{ color: '#8B1E2D' }}>:</div>
 
               <div
                 className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-8 py-2.5 sm:py-4 shadow-sm border-2 min-w-[76px] sm:min-w-[95px]"
-                style={{ borderColor: '#1642A8' }}
+                style={{ borderColor: '#8B1E2D' }}
               >
                 <div
                   className="text-2xl sm:text-5xl font-black text-center"
-                  style={{ color: '#1642A8' }}
+                  style={{ color: '#8B1E2D' }}
                 >
                   {seconds}
                 </div>
@@ -192,10 +192,10 @@ export const PricingSection: React.FC = () => {
                   className="mt-4 rounded-xl border border-dashed px-3 py-2.5 flex items-start gap-2"
                   style={{ backgroundColor: '#F1F5F9', borderColor: '#E2E8F0' }}
                 >
-                  <span className="text-lg leading-none font-bold" style={{ color: '#1E4FC2' }}>↓</span>
+                  <span className="text-lg leading-none font-bold" style={{ color: '#8B1E2D' }}>↓</span>
                   <p className="text-xs sm:text-sm leading-snug" style={{ color: '#0F172A' }}>
-                    <span className="font-extrabold" style={{ color: '#1E4FC2' }}>92% das pessoas</span> preferem
-                    levar os <span className="font-extrabold" style={{ color: '#1E4FC2' }}>4 bônus</span> no plano completo
+                    <span className="font-extrabold" style={{ color: '#8B1E2D' }}>92% das pessoas</span> preferem
+                    levar os <span className="font-extrabold" style={{ color: '#8B1E2D' }}>4 bônus</span> no plano completo
                   </p>
                 </div>
               )}
@@ -212,7 +212,7 @@ export const PricingSection: React.FC = () => {
             <div
               className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-white text-xs font-black tracking-wider uppercase shadow-xl whitespace-nowrap flex items-center gap-2 border border-amber-300/40"
               style={{
-                background: 'linear-gradient(135deg, #1E4FC2 0%, #1642A8 100%)',
+                background: 'linear-gradient(135deg, #8B1E2D 0%, #6D1522 100%)',
               }}
             >
               <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
@@ -269,7 +269,7 @@ export const PricingSection: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 {premiumPlan.bonusHighlights?.map((bonus) => (
                   <li key={bonus.tag} className="flex items-center gap-2">
-                    <span className="px-2 py-0.5 rounded-md text-[11px] font-extrabold text-white bg-[#1E4FC2] shrink-0 shadow-xs">
+                    <span className="px-2 py-0.5 rounded-md text-[11px] font-extrabold text-white bg-[#8B1E2D] shrink-0 shadow-xs">
                       BÔNUS {bonus.tag}
                     </span>
                     <span className="leading-snug font-bold text-[#0F172A] text-xs sm:text-sm">

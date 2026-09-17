@@ -9,15 +9,15 @@ export const BonusesSection: React.FC = () => {
           <div
             className="inline-block px-5 py-2 rounded-full text-white text-[11px] sm:text-xs font-black mb-4 tracking-widest uppercase shadow-xs"
             style={{
-              backgroundColor: '#D97706',
-              border: '1px solid #FDE68A',
+              backgroundColor: '#8B1E2D',
+              border: '1px solid #C79A3B',
             }}
           >
             {salesContent.bonuses.badge}
           </div>
           <h2 className="text-2xl sm:text-4xl font-black leading-tight tracking-tight text-black">
             {salesContent.bonuses.headingPrefix}{' '}
-            <span className="inline-block" style={{ color: '#1E4FC2' }}>
+            <span className="inline-block" style={{ color: '#8B1E2D' }}>
               {salesContent.bonuses.headingHighlight}
             </span>
           </h2>
@@ -26,7 +26,7 @@ export const BonusesSection: React.FC = () => {
           </p>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-4"
-            style={{ backgroundColor: '#EAB308' }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -55,11 +55,10 @@ export const BonusesSection: React.FC = () => {
 
               <div className="p-6 flex flex-col flex-1 border-t" style={{ borderColor: '#E2E8F0' }}>
                 <span
-                  className="inline-block text-[11px] font-extrabold px-3 py-1 rounded-full mb-2 tracking-wider self-start"
+                  className="inline-block text-[11px] font-extrabold px-3 py-1 rounded-full mb-2 tracking-wider self-start text-white shadow-xs"
                   style={{
-                    backgroundColor: '#FEF3C7',
-                    color: '#B45309',
-                    border: '1px solid #FDE68A',
+                    backgroundColor: '#8B1E2D',
+                    border: '1px solid #C79A3B',
                   }}
                 >
                   {bonus.tag}

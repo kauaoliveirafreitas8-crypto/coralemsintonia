@@ -11,7 +11,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
       id="skills-section"
       className="py-14 sm:py-18 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden"
       style={{
-        backgroundColor: '#1642A8',
+        backgroundColor: '#123C32',
       }}
     >
       <div className="max-w-5xl mx-auto relative z-10">
@@ -21,7 +21,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ backgroundColor: '#EAB308' }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -31,7 +31,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
               key={item.title}
               className="relative flex flex-col items-center text-center p-3.5 sm:p-5 rounded-xl sm:rounded-2xl transition-all duration-200 hover:-translate-y-1"
               style={{
-                backgroundColor: '#113382',
+                backgroundColor: '#164E41',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
               }}
             >
@@ -48,7 +48,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onScrollToOffer })
                 {item.title}
               </h3>
               {item.desc && (
-                <p className="text-[11px] sm:text-sm text-white/90 leading-snug sm:leading-relaxed font-medium">
+                <p className="text-[11px] sm:text-sm text-white/95 leading-snug sm:leading-relaxed font-medium">
                   {item.desc}
                 </p>
               )}

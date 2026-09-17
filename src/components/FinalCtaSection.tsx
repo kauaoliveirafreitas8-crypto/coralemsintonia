@@ -11,11 +11,11 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToOffe
       id="final-cta-section"
       className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden"
       style={{
-        backgroundColor: '#1642A8',
+        backgroundColor: '#123C32',
       }}
     >
       <div className="max-w-2xl mx-auto relative z-10">
-        <p className="text-xs sm:text-sm font-black tracking-widest uppercase mb-3 text-blue-200" style={{ color: '#BFDBFE' }}>
+        <p className="text-xs sm:text-sm font-black tracking-widest uppercase mb-3" style={{ color: '#FACC15' }}>
           {salesContent.finalCta.title}
         </p>
 
@@ -23,7 +23,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToOffe
           {salesContent.finalCta.heading}
         </h2>
 
-        <p className="text-sm sm:text-base mb-5 leading-relaxed max-w-xl mx-auto text-blue-100" style={{ color: '#E0E7FF' }}>
+        <p className="text-sm sm:text-base mb-5 leading-relaxed max-w-xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.95)' }}>
           {salesContent.finalCta.subtitle}
         </p>
 
@@ -45,7 +45,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToOffe
           <span className="leading-snug">{salesContent.finalCta.buttonText}</span>
         </button>
 
-        <p className="text-xs sm:text-sm mt-4 font-medium text-blue-200" style={{ color: '#BFDBFE' }}>
+        <p className="text-xs sm:text-sm mt-4 font-medium" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>
           {salesContent.finalCta.trustText}
         </p>
       </div>

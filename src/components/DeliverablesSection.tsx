@@ -15,13 +15,13 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <span className="text-black" style={{ color: '#000000' }}>
               {salesContent.deliverables.titlePrefix}
             </span>
-            <span style={{ color: '#1E4FC2' }}>
+            <span style={{ color: '#8B1E2D' }}>
               {salesContent.deliverables.titleHighlight}
             </span>
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ backgroundColor: '#EAB308' }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -44,16 +44,16 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <span
               className="inline-block text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full mb-3 text-white tracking-wider"
               style={{
-                backgroundColor: '#1E4FC2',
+                backgroundColor: '#8B1E2D',
               }}
             >
               {salesContent.deliverables.badge}
             </span>
             <h3
               className="text-xl sm:text-3xl font-black mb-2 tracking-tight"
-              style={{ color: '#1E4FC2' }}
             >
-              {salesContent.deliverables.productName}
+              <span style={{ color: '#8B1E2D' }}>+80 ATIVIDADES </span>
+              <span style={{ color: '#123C32' }}>PRONTAS</span>
             </h3>
 
             <p className="text-sm sm:text-base mb-5 font-semibold leading-relaxed" style={{ color: '#475569' }}>
@@ -77,9 +77,9 @@ export const DeliverablesSection: React.FC<DeliverablesSectionProps> = ({ onScro
             <div
               className="p-4 rounded-xl border mb-6 text-xs sm:text-sm font-semibold leading-relaxed"
               style={{
-                backgroundColor: '#EFF6FF',
-                borderColor: '#BFDBFE',
-                color: '#1E3A8A',
+                backgroundColor: '#FEF9EE',
+                borderColor: '#FDE68A',
+                color: '#78350F',
               }}
             >
               💡 {salesContent.deliverables.footerNote}

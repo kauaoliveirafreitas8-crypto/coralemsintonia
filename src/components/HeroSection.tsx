@@ -23,15 +23,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
 
         {/* Main Headline */}
         <h1 className="font-black leading-tight mb-4 tracking-tight">
-          <span
-            className="block text-3xl sm:text-5xl md:text-6xl font-black"
-            style={{ color: '#2563EB' }}
-          >
-            {salesContent.hero.headlineHighlight}
+          <span className="block text-3xl sm:text-5xl md:text-6xl font-black">
+            <span style={{ color: '#8B1E2D' }}>+80 ATIVIDADES </span>
+            <span style={{ color: '#123C32' }}>PRONTAS</span>
           </span>
           <span
-            className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3 font-extrabold text-black"
-            style={{ color: '#000000' }}
+            className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3 font-extrabold"
+            style={{ color: '#0F172A' }}
           >
             {salesContent.hero.headlineSubtitle}
           </span>
@@ -72,8 +70,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
               key={tag}
               className="px-3.5 sm:px-4.5 py-1 sm:py-1.5 rounded-full text-white shadow-sm transition-transform hover:scale-105 font-bold"
               style={{
-                backgroundColor: '#1E4FC2',
-                borderTop: '2px solid #EAB308',
+                backgroundColor: '#123C32',
+                borderTop: '2px solid #C79A3B',
               }}
             >
               {tag}

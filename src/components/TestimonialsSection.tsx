@@ -12,7 +12,7 @@ export const TestimonialsSection: React.FC = () => {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ backgroundColor: '#EAB308' }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -41,7 +41,7 @@ export const TestimonialsSection: React.FC = () => {
               </div>
 
               <div className="pt-2 border-t" style={{ borderColor: '#E2E8F0' }}>
-                <p className="font-extrabold text-sm sm:text-base" style={{ color: '#1642A8' }}>
+                <p className="font-extrabold text-sm sm:text-base" style={{ color: '#123C32' }}>
                   {item.name}
                 </p>
                 <p className="text-xs sm:text-sm font-semibold" style={{ color: '#475569' }}>

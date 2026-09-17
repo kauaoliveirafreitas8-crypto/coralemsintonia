@@ -9,8 +9,8 @@ export const TargetAudienceSection: React.FC = () => {
           <div
             className="inline-block px-6 py-2 rounded-full mb-4 shadow-sm"
             style={{
-              backgroundColor: '#1E4FC2',
-              border: '1px solid rgba(255, 255, 255, 0.25)',
+              backgroundColor: '#123C32',
+              border: '1px solid #C79A3B',
             }}
           >
             <span className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
@@ -35,8 +35,8 @@ export const TargetAudienceSection: React.FC = () => {
               <div
                 className="w-11 h-11 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2.5 sm:mb-3 text-xl sm:text-3xl transition-transform group-hover:scale-110 shrink-0"
                 style={{
-                  backgroundColor: '#EFF6FF',
-                  border: '1px solid #BFDBFE',
+                  backgroundColor: '#FEF9EE',
+                  border: '1px solid #FDE68A',
                 }}
               >
                 {item.emoji}

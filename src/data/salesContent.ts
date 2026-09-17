@@ -1,19 +1,20 @@
 import { BonusItem, FaqItem, SalesPlan, SkillItem, TargetAudienceItem, TestimonialItem } from '../types';
 
 export const salesContent = {
-  // Brand & Colors (Official Reference Palette)
+  // Brand & Colors (Official Reference Palette from image.png)
   brand: {
-    primary: '#1642A8', // azul-principal
-    primaryDark: '#0F2C6F', // azul escuro banner
-    royalBlue: '#1E4FC2', // azul royal vibrante
-    secondary: '#1D4ED8', // azul secundario
+    primary: '#123C32', // verde-principal (Deep Forest Green das vestes e capa)
+    primaryDark: '#0C2D25', // verde escuro
+    forestGreen: '#123C32',
+    wine: '#8B1E2D', // vinho/rubi ("+80 ATIVIDADES" e selos na imagem)
+    wineDark: '#6D1522',
+    gold: '#C79A3B', // dourado das molduras e ornamentos da imagem
+    goldBright: '#FACC15', // dourado brilhante
     greenCta: '#16A34A', // verde-cta vivo (inalterado)
     greenCtaHover: '#15803D', // verde-cta-hover (inalterado)
-    wine: '#1E4FC2', // substituido pelo azul da referencia
-    gold: '#EAB308', // dourado/amarelo da referencia
     bgMain: '#FFFFFF', // fundo-principal
     bgAlt: '#F8FAFC', // fundo-alternativo
-    bgBlue: '#1642A8', // fundo secao azul
+    bgGreen: '#123C32', // fundo secao verde
     bgGuarantee: '#FEF9EE', // fundo-garantia
     white: '#FFFFFF',
     textMain: '#0F172A',
@@ -24,7 +25,7 @@ export const salesContent = {
     greenDark: '#16A34A',
     greenLight: '#22C55E',
     goldLight: '#FEF9EE',
-    dark: '#0F2C6F',
+    dark: '#0C2D25',
   },
 
   // Checkout URLs (vazio para inserção do seu link próprio)

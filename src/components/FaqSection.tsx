@@ -19,7 +19,7 @@ export const FaqSection: React.FC = () => {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full mt-3"
-            style={{ backgroundColor: '#EAB308' }}
+            style={{ backgroundColor: '#C79A3B' }}
           />
         </div>
 
@@ -42,14 +42,14 @@ export const FaqSection: React.FC = () => {
                 >
                   <span
                     className="font-extrabold text-sm sm:text-base pr-3"
-                    style={{ color: isOpen ? '#1642A8' : '#0F172A' }}
+                    style={{ color: isOpen ? '#123C32' : '#0F172A' }}
                   >
                     {item.q}
                   </span>
                   {isOpen ? (
                     <ChevronUp
                       className="w-5 h-5 shrink-0 transition-transform"
-                      style={{ color: '#1642A8' }}
+                      style={{ color: '#123C32' }}
                     />
                   ) : (
                     <ChevronDown
